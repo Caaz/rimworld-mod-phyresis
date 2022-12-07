@@ -1,0 +1,10 @@
+include Mixins/Mixins.pug
+doctype xml
+ModMetaData
+  name=name
+  description=description
+  author=author
+  packageId=packageId
+  +Array("supportedVersions", supportedVersions)
+  +Array("loadAfter", loadAfter)
+  +Array("modDependencies", modDependencies)
